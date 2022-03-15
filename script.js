@@ -1,7 +1,8 @@
 const container = document.querySelector('#container');
 
-const box = document.createELement('div');
+const content = document.createElement('div');
 
-box.style.backgroundColor = 'black';
-box.classList.add('box');
-container.appendChild('box');
+content.style.backgroundColor = 'black';
+content.classList.add('content');
+content.textContent = 'test';
+container.appendChild(content);
