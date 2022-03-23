@@ -1,32 +1,27 @@
-const container = document.querySelector('#container');
 
-const content = document.createElement('div');
+let size = 16;
+for(let i =0; i < size * size; i++) {
+    const content = document.createElement('div');
+    content.classList.add('con');
 
-content.style.backgroundColor = 'black';
-content.style.border = "thick solid red";
-content.style.width = "100px";
-content.style.height = "100px";
+    content.addEventListener("mouseover",changeColor);
 
-
-content.classList.add('content');
-content.textContent = " ";
-const fragment = new DocumentFragment();
-
-for(let i =0; i < 256; i++) {
-    fragment.appendChild(content.cloneNode(true));
     
+    container.appendChild(content);
+    
+};
+
+
+function changeColor(e) {
+    e.target.style.backgroundColor = "blue";
 }
 
-container.appendChild(fragment);
-
-const hoverContent = document.getElementById('div');
 
 
-function hover(element, className) {
-    element.addEventListener('mouseenter', e => element.classList.add(className));
-    element.addEventListener('mouseleave', e => element.classList.remove(className));
-}
-hover(document.querySelector('.content'), 'hoverContent')
+
+
+
+
 
 
 
