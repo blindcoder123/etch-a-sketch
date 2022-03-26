@@ -1,13 +1,11 @@
 #container {
     display: grid;
-    
-    width: 1600px;
-    height: 1600px;
+    width: 500px;
+    height: 500px;
 }
 
 #container .con {
-    display: grid;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
    
     
 }
