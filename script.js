@@ -21,9 +21,7 @@ for(let i =0; i < size * size; i++) {
 function changeColor(e) {
     if (rainbow.checked) {
         e.target.style.backgroundColor = getRandomColor();
-    } else if (darken.checked) {
-        e.target.style.backgroundColor = rgb(0, 0, 0, 0.1);
-    }
+    } 
     else {
         e.target.style.backgroundColor = "blue";
     };
